@@ -43,7 +43,6 @@ class ProductImport implements ToCollection
                 ]
             );
 
-
             foreach ($header as $i => $headerName) {
                 if (str_starts_with($headerName, 'Доп. поле:')) {
                     $key = trim(str_replace('Доп. поле:', '', $headerName));
@@ -62,7 +61,6 @@ class ProductImport implements ToCollection
                     }
                 }
             }
-
 
             $imageColumns = [36, 37];
             foreach ($imageColumns as $column) {
