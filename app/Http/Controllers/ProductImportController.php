@@ -18,8 +18,10 @@ class ProductImportController extends Controller
         return view('import-form');
     }
 
+
     public function import(ImportFileRequest $request): RedirectResponse
     {
+        // todo перенести в очереди, чтобы не блокировать интерфейс
         $file = $request->file('file');
         Excel::import(new ProductImport, $file);
 
