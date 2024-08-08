@@ -22,7 +22,7 @@ class ProductImport implements ToCollection
         foreach ($rows as $row) {
             $externalCode = $row[5] ?? null;
             $name = $row[4] ?? null;
-            $description = $row[17] ?? null;
+            $description = $row[10] ?? null;
             $price = $row[8] ?? null;
             $discount = $row[19] ?? null;
 
