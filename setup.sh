@@ -12,6 +12,9 @@ if [ ! -f .env ]; then
 fi
 
 ./vendor/bin/sail up -d
+
+sleep 10
+
 ./vendor/bin/sail artisan key:generate
 ./vendor/bin/sail artisan migrate
 ./vendor/bin/sail npm install
