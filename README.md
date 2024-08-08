@@ -14,4 +14,6 @@ cp .env.example .env
 
 ./vendor/bin/sail npm run dev
 
+файлы для проверки находятся в дериктории excel files
+
 страница импорта excel файла находится по пути [localhost/import](http://localhost/import)
