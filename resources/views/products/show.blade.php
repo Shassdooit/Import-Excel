@@ -19,8 +19,8 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $product->name }}</h5>
                         <p class="card-text">{{ $product->description }}</p>
-                        <p class="card-text">Цена: {{ number_format($product->price, 2) }} руб.</p>
-                        <p class="card-text">Скидка: {{ round($product->discount) }}%</p>
+                        <p class="card-text">Цена: {{ intval($product->price) }} руб.</p>
+                        <p class="card-text">Скидка: {{ intval($product->discount) }}%</p>
 
                         <div class="accordion mb-3" id="additionalFieldsAccordion">
                             <div class="accordion-item">
